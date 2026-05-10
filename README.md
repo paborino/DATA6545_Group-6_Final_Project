@@ -31,24 +31,39 @@ The dataset contains millions of accident records across the United States, incl
 - Visibility and traffic-related indicators
 - Environmental conditions
 
+Note: Due to dataset size limitations, a deterministic sample of approximately 300,000 records was used for development and experimentation.
+
 ---
 
 ## Repository Structure
 
-```text
+```
 DATA6545_Group_6_Final_Project/
 │
-├── app.py
+├── README.md
 ├── requirements.txt
 ├── example_payload.json
-├── DATA_6545_Final_Project.ipynb
+├── .gitignore
+│
+├── notebooks/
+│   └── DATA_6545_Group_6_Final_Project.ipynb
+│
+├── src/
+│   └── app.py
 │
 ├── models/
-├── figures/
-├── artifacts/
+│   └── models-20260509T160829Z-3-001.zip
 │
-├── Final Report
-└── Final Presentation
+├── figures/
+│   └── figures-20260509T160907Z-3-001.zip
+│
+├── report/
+│   └── DATA 6545 Group 6 Final Project Report_vFinal.docx
+│
+├── presentation/
+│   └── DATA 6545 Group 6 Final Project Presentation.pptx
+│
+└── data/n
 ```
 
 ---
@@ -116,7 +131,7 @@ pip install -r requirements.txt
 ### Run Flask API
 
 ```bash
-python app.py
+python src/app.py
 ```
 
 ---
